@@ -11,7 +11,7 @@ An sdk that maps the Oneall REST API into nodejs.
 The following example fetches a user information based on a connection token. All the methods implemented on this sdk follow the same arguments / return logic.
 
 
-```
+```js
 var Oneall = require('oneall-sdk');
 var oneall = new Oneall({
     endpoint: 'https://baboom.api.oneall.com',
@@ -39,7 +39,7 @@ All the entities and methods described on: http://docs.oneall.com/api/ are also 
 
 # API
 
-```
+```js
 var Oneall = require('oneall-sdk');
 var oneall = new Oneall({
     endpoint: 'https://baboom.api.oneall.com',
@@ -63,7 +63,7 @@ The connection endpoints are mainly used in the callback handler script. This is
 
 Send a GET request to this resource to retrieve the complete list of social network connections made to your Site.
 
-  ```
+  ```js
   oneall.connection.getAll(
     1,
     function (err, data, fullData) {
@@ -87,7 +87,7 @@ Send a GET request to this resource to retrieve the complete list of social netw
 
 Send a GET request to this resource to retrieve the details of a social network connection made on your Site.
 
-  ```
+  ```js
   oneall.connection.get(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
@@ -111,7 +111,7 @@ Send a GET request to this resource to retrieve the details of a social network 
 Send a GET request to this resource to retrieve the details of a social network connection made on your Site.
 (this is a helper method, fullData argument on the callback, will be exactly the same as the one on oneall.connection.get)
 
-  ```
+  ```js
   oneall.connection.get(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
@@ -144,7 +144,7 @@ An identity can only be linked to one user at a time, but one and the same user 
 
 Send a GET request to this resource to obtain the complete list of your identities.
 
-```
+```js
   oneall.identity.getAll(
     1,
     function (err, data, fullData) {
@@ -168,7 +168,7 @@ Send a GET request to this resource to obtain the complete list of your identiti
 
 Send a GET request to this resource to obtain the complete list of your identities.
 
-```
+```js
   oneall.identity.getAll(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
@@ -192,7 +192,7 @@ Send a GET request to this resource to obtain the complete list of your identiti
 
 Send a DELETE request to this resource in order to delete an identity.
 
-```
+```js
   oneall.identity.del(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
@@ -216,7 +216,7 @@ Send a DELETE request to this resource in order to delete an identity.
 
 Send a PUT request to this resource to synchronize an identity with the underlying social network profile.
 
-```
+```js
   oneall.identity.synchronize(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
@@ -240,7 +240,7 @@ Send a PUT request to this resource to synchronize an identity with the underlyi
 
 Send a PUT request to this resource to link an identity to another user.
 
-```
+```js
   oneall.identity.synchronize(
     '55555555-5555-5555-5555-5555555555555',
     '75555555-7555-7555-7555-7555555555555',
@@ -276,7 +276,7 @@ Each user has a least one but may have multiple identities. An identity is the d
 
 Send a GET request to this resource to obtain the list of your users.
 
-```
+```js
   oneall.user.getAll(
     1,
     function (err, data, fullData) {
@@ -300,7 +300,7 @@ Send a GET request to this resource to obtain the list of your users.
 
 Send a GET request to this resource to retrieve the details of an existing user.
 
-```
+```js
   oneall.identity.getAll(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
@@ -324,7 +324,7 @@ Send a GET request to this resource to retrieve the details of an existing user.
 
 Send a DELETE request to this resource in order to delete an identity.
 
-```
+```js
   oneall.user.del(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
@@ -348,7 +348,7 @@ Send a DELETE request to this resource in order to delete an identity.
 
 Send a GET request to the following resource to retrieve the social network contacts of an existing user.
 
-```
+```js
   oneall.user.getContacts(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
@@ -372,7 +372,7 @@ Send a GET request to the following resource to retrieve the social network cont
 
 Send a POST request to this resource to publish content (posts, tweets ...) on the social network account of a user. More advanced sharing features are available through our Social Sharing API.
 
-```
+```js
   oneall.user.publish(
     '55555555-5555-5555-5555-5555555555555',
     ['facebook', 'twitter', 'linkedin'],
@@ -420,7 +420,7 @@ With our sharing API you can easily share content to multiple social networks si
 
 Send a GET  request to this resource to retrieve the complete list of published messages.
 
-```
+```js
   oneall.sharingMessage.getAll(
     1,
     function (err, data, fullData) {
@@ -444,7 +444,7 @@ Send a GET  request to this resource to retrieve the complete list of published 
 
 Send a GET request to this resource to retrieve the details of a previously published message.
 
-```
+```js
   oneall.sharingMessage.get(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
@@ -468,7 +468,7 @@ Send a GET request to this resource to retrieve the details of a previously publ
 
 Send a POST request to this resource to publish content on behalf of a user.
 
-```
+```js
   oneall.sharingMessage.publish(
     '55555555-5555-5555-5555-5555555555555',
     ['facebook', 'twitter', 'linkedin'],
@@ -508,7 +508,7 @@ Send a POST request to this resource to publish content on behalf of a user.
 
 Send a POST request to this resource to publish a previously published message to other social networks.
 
-```
+```js
   oneall.sharingMessage.publish(
     '55555555-5555-5555-5555-5555555555555',
     '11155555-5555-5555-5555-5555555555111',
@@ -535,7 +535,7 @@ Send a POST request to this resource to publish a previously published message t
 
 Send a DELETE request to this resource to permanently delete an existing sharing message. Please note that the message will not be removed from the social networks.
 
-```
+```js
   oneall.sharingMessage.del(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
@@ -566,7 +566,7 @@ With our Sharing Analytics API you can measure and optimise the impact of conten
 
 Send a GET request to this resource to obtain the list of your snapshots.
 
-```
+```js
   oneall.analytics.getAll(
     1,
     function (err, data, fullData) {
@@ -590,7 +590,7 @@ Send a GET request to this resource to obtain the list of your snapshots.
 
 Send a GET request to this resource to retrieve the details of an existing snapshot.
 
-```
+```js
   oneall.analytics.get(
     '888888888-8888-8888-8888-8888888888888',
     function (err, data, fullData) {
@@ -614,7 +614,7 @@ Send a GET request to this resource to retrieve the details of an existing snaps
 
 Send a DELETE request to the following resource to delete an existing snapshot.
 
-```
+```js
   oneall.analytics.del(
     '888888888-8888-8888-8888-8888888888888',
     function (err, data, fullData) {
@@ -638,7 +638,7 @@ Send a DELETE request to the following resource to delete an existing snapshot.
 
 Send a PUT request to this resource to initiate a snapshot of a previously published message.
 
-```
+```js
   oneall.analytics.initiate(
     '55555555-5555-5555-5555-5555555555555',
     'http://mydomain/dealwithsnapshotconclusion.html',
@@ -677,7 +677,7 @@ The <shorturl_token> is the key that uniquely identifies a shortened url.
 
 Send a GET request to the following resource to retrieve the shortened urls for one of your Sites.
 
-  ```
+  ```js
   oneall.shorturl.getAll(
     1,
     function (err, data, fullData) {
@@ -701,7 +701,7 @@ Send a GET request to the following resource to retrieve the shortened urls for 
 
 Send a GET request to the following resource to retrieve the details of an existing Shorturl.
 
-  ```
+  ```js
   oneall.shorturl.get(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
@@ -724,7 +724,7 @@ Send a GET request to the following resource to retrieve the details of an exist
 
 Send a GET request to the following resource to retrieve the details of an existing Shorturl.
 
-  ```
+  ```js
   oneall.shorturl.create(
     'http://www.example.org/page.html',
     function (err, data, fullData) {
@@ -747,7 +747,7 @@ Send a GET request to the following resource to retrieve the details of an exist
 
 Send a DELETE request to the following resource to delete an existing Shorturl.
 
-  ```
+  ```js
   oneall.shorturl.del(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
@@ -780,7 +780,7 @@ The <sso_session_token> is the key that uniquely identifies a single sign-on ses
 
 Send a GET request to this resource to obtain a list with the open SSO sessions.
 
-  ```
+  ```js
   oneall.sso.getAll(
     1,
     function (err, data, fullData) {
@@ -804,7 +804,7 @@ Send a GET request to this resource to obtain a list with the open SSO sessions.
 
 Send a PUT request to the following resource to create a new SSO session for a user.
 
-  ```
+  ```js
   oneall.shorturl.create(
     '555555555-5555-5555-5555-555555555555555',
     '115555555-1551-1551-1551-555555555555511',

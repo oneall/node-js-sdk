@@ -22,6 +22,7 @@ module.exports.analytics = analytics;
  * @param {Object} options Connection properties, and some other options {api: {endpoint:..., publickey:..., privatekey:...}, debug:false};
  */
 function Oneall(cfg) {
+
     var objects = [
         'connection',
         'identity',

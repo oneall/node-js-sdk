@@ -17,6 +17,6 @@
     "name": "Baboom"
   },
   "license": "ISC",
-  "readme": "Oneall sdk.\n\nCheck the service on: http://www.oneall.com\nCheck each individual method on: ./test.js\n\n\nStructure:\n\n    Oneall\n    Oneall.analytics\n    Oneall.connection\n    Oneall.sharingMessage\n    Oneall.shorturl\n    Oneall.sso\n    Oneall.user\n\nExamples:\n    \n    // getting all users that subscribed on your site using oneall\n    oneall.connection.getAll(1, function (error, response) { console.log(response.data.entries); });\n\n    // getting all short url's created using the site\n    oneall.shorturl.getAll(1, function (error, response) { console.log(response.data.entries); });\n",
+  "readme": "An sdk that maps the Oneall REST API into nodejs.",
   "readmeFilename": "README.md"
 }

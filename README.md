@@ -70,8 +70,8 @@ Send a GET request to this resource to retrieve the complete list of social netw
         if (err) {
             throw(err);
         }
-        console.log('Connection data: ', data);
-        console.log('Full response data: ', fullData);
+        console.log('Meaningful data: ', data);
+        console.log('Full data: ', fullData);
     }
 );
 ```
@@ -94,8 +94,8 @@ Send a GET request to this resource to retrieve the details of a social network 
         if (err) {
             throw(err);
         }
-        console.log('Connection data: ', data);
-        console.log('Full response data: ', fullData);
+        console.log('Meaningful data: ', data);
+        console.log('Full data: ', fullData);
     }
 );
 ```
@@ -118,8 +118,8 @@ Send a GET request to this resource to retrieve the details of a social network 
         if (err) {
             throw(err);
         }
-        console.log('User data: ', data);
-        console.log('Full response data: ', fullData);
+        console.log('Meaningful data: ', data);
+        console.log('Full data: ', fullData);
     }
 );
 ```
@@ -151,7 +151,7 @@ Send a GET request to this resource to obtain the complete list of your identiti
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -175,7 +175,7 @@ Send a GET request to this resource to obtain the complete list of your identiti
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -199,7 +199,7 @@ Send a DELETE request to this resource in order to delete an identity.
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -223,7 +223,7 @@ Send a PUT request to this resource to synchronize an identity with the underlyi
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -248,7 +248,7 @@ Send a PUT request to this resource to link an identity to another user.
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -283,7 +283,7 @@ Send a GET request to this resource to obtain the list of your users.
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -307,7 +307,7 @@ Send a GET request to this resource to retrieve the details of an existing user.
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -331,7 +331,7 @@ Send a DELETE request to this resource in order to delete an identity.
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -355,7 +355,7 @@ Send a GET request to the following resource to retrieve the social network cont
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -381,7 +381,7 @@ Send a POST request to this resource to publish content (posts, tweets ...) on t
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -427,7 +427,7 @@ Send a GET  request to this resource to retrieve the complete list of published 
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -451,7 +451,7 @@ Send a GET request to this resource to retrieve the details of a previously publ
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -477,7 +477,7 @@ Send a POST request to this resource to publish content on behalf of a user.
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -517,7 +517,7 @@ Send a POST request to this resource to publish a previously published message t
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -542,7 +542,7 @@ Send a DELETE request to this resource to permanently delete an existing sharing
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -573,7 +573,7 @@ Send a GET request to this resource to obtain the list of your snapshots.
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -597,7 +597,7 @@ Send a GET request to this resource to retrieve the details of an existing snaps
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -621,7 +621,7 @@ Send a DELETE request to the following resource to delete an existing snapshot.
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -646,7 +646,7 @@ Send a PUT request to this resource to initiate a snapshot of a previously publi
         if (err) {
             throw(err);
         }
-        console.log('Data: ', data);
+        console.log('Meaningful data: ', data);
         console.log('Full data: ', fullData);
     }
   );
@@ -684,8 +684,8 @@ Send a GET request to the following resource to retrieve the shortened urls for 
         if (err) {
             throw(err);
         }
-        console.log('Connection data: ', data);
-        console.log('Full response data: ', fullData);
+        console.log('Meaningful data: ', data);
+        console.log('Full data: ', fullData);
     }
 );
 ```
@@ -708,8 +708,8 @@ Send a GET request to the following resource to retrieve the details of an exist
         if (err) {
             throw(err);
         }
-        console.log('Connection data: ', data);
-        console.log('Full response data: ', fullData);
+        console.log('Meaningful data: ', data);
+        console.log('Full data: ', fullData);
     }
 );
 ```
@@ -731,8 +731,8 @@ Send a GET request to the following resource to retrieve the details of an exist
         if (err) {
             throw(err);
         }
-        console.log('Connection data: ', data);
-        console.log('Full response data: ', fullData);
+        console.log('Meaningful data: ', data);
+        console.log('Full data: ', fullData);
     }
 );
 ```
@@ -754,8 +754,8 @@ Send a DELETE request to the following resource to delete an existing Shorturl.
         if (err) {
             throw(err);
         }
-        console.log('Connection data: ', data);
-        console.log('Full response data: ', fullData);
+        console.log('Meaningful data: ', data);
+        console.log('Full data: ', fullData);
     }
 );
 ```
@@ -787,8 +787,8 @@ Send a GET request to this resource to obtain a list with the open SSO sessions.
         if (err) {
             throw(err);
         }
-        console.log('Connection data: ', data);
-        console.log('Full response data: ', fullData);
+        console.log('Meaningful data: ', data);
+        console.log('Full data: ', fullData);
     }
 );
 ```
@@ -813,8 +813,8 @@ Send a PUT request to the following resource to create a new SSO session for a u
         if (err) {
             throw(err);
         }
-        console.log('Connection data: ', data);
-        console.log('Full response data: ', fullData);
+        console.log('Meaningful data: ', data);
+        console.log('Full data: ', fullData);
     }
 );
 ```
@@ -833,8 +833,7 @@ Send a PUT request to the following resource to create a new SSO session for a u
 
 
 
-## Provider
-
+## provider
 
 
 ### oneall.provider.getAll(callback)
@@ -847,8 +846,8 @@ Send a GET request to this resource to retrieve a list of configured providers.
         if (err) {
             throw(err);
         }
-        console.log('Connection data: ', data);
-        console.log('Full response data: ', fullData);
+        console.log('Meaningful data: ', data);
+        console.log('Full data: ', fullData);
     }
 );
 ```

@@ -7,7 +7,7 @@ var connection = require('./lib/connection'),
     user = require('./lib/user'),
     sso = require('./lib/sso'),
     analytics = require('./lib/analytics'),
-    providers = require('./lib/providers'),
+    provider = require('./lib/provider'),
     Api = require('./lib/core/api'),
     Config = require('./lib/config');
 
@@ -25,7 +25,7 @@ function Oneall(cfg) {
         'user',
         'sso',
         'analytics',
-        'providers'
+        'provider'
     ];
 
     if (cfg === undefined) {
@@ -63,6 +63,6 @@ Oneall.prototype.user = user;
 Oneall.prototype.identity = identity;
 Oneall.prototype.sso = sso;
 Oneall.prototype.analytics = analytics;
-Oneall.prototype.providers = providers;
+Oneall.prototype.provider = provider;
 
 module.exports = Oneall;

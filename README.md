@@ -825,10 +825,36 @@ Send a PUT request to the following resource to create a new SSO session for a u
   - `callback` method to be executed that will receive as argument the error, data and fullData
 
   **Optional Arguments**
+ 
   - `opts.top_realm` A string to specify the primary realm of this SSO session.
   - `opts.sub_realm` A string to specify the secondary realm of this SSO session.
   - `opts.lifetime` A numeric value that represents the lifetime of the SSO session in seconds.
 
 
+
+
+## Provider
+
+
+
+### oneall.provider.getAll(callback)
+
+Send a GET request to this resource to retrieve a list of configured providers.
+ 
+  ```js
+  oneall.provider.getAll(
+    function (err, data, fullData) {
+        if (err) {
+            throw(err);
+        }
+        console.log('Connection data: ', data);
+        console.log('Full response data: ', fullData);
+    }
+);
+```
+
+ **Arguments:**
+
+  - `callback` method to be executed that will receive as argument the error, data and fullData
 
 

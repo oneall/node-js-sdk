@@ -7,15 +7,9 @@ var connection = require('./lib/connection'),
     user = require('./lib/user'),
     sso = require('./lib/sso'),
     analytics = require('./lib/analytics'),
+    providers = require('./lib/providers'),
     Api = require('./lib/core/api'),
     Config = require('./lib/config');
-
-module.exports.connection = connection;
-module.exports.sharingMessage = sharingMessage;
-module.exports.shorturl = shorturl;
-module.exports.user = user;
-module.exports.sso = sso;
-module.exports.analytics = analytics;
 
 /**
  * Oneall sdk, agregates all functions provided by Oneall rest API
@@ -30,7 +24,8 @@ function Oneall(cfg) {
         'shorturl',
         'user',
         'sso',
-        'analytics'
+        'analytics',
+        'providers'
     ];
 
     if (cfg === undefined) {
@@ -59,8 +54,6 @@ function Oneall(cfg) {
         }, this);
     }, this);
 
-
-    this.connection.getAll = this.connection.getAll.bind(this);
 }
 
 Oneall.prototype.connection = connection;
@@ -70,6 +63,6 @@ Oneall.prototype.user = user;
 Oneall.prototype.identity = identity;
 Oneall.prototype.sso = sso;
 Oneall.prototype.analytics = analytics;
-
+Oneall.prototype.providers = providers;
 
 module.exports = Oneall;

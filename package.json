@@ -1,6 +1,6 @@
 {
   "name": "@baboom/oneall-sdk",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Oneall sdk",
   "main": "index.js",
   "dependencies": {

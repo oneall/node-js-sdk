@@ -1,7 +1,7 @@
 {
-  "name": "@baboom/oneall-sdk",
+  "name": "oneall",
   "version": "0.1.0",
-  "description": "Oneall sdk",
+  "description": "Official Oneall SDK",
   "main": "index.js",
   "dependencies": {
     "request": "^2.40.0"
@@ -16,7 +16,5 @@
   "author": {
     "name": "Baboom"
   },
-  "license": "ISC",
-  "readme": "An sdk that maps the Oneall REST API into nodejs.",
-  "readmeFilename": "README.md"
+  "license": "ISC"
 }

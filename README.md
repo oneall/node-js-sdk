@@ -40,7 +40,7 @@ All the entities and methods described on: http://docs.oneall.com/api/ are also 
 # API
 
 ```js
-var Oneall = require('oneall-sdk');
+var Oneall = require('oneall');
 var oneall = new Oneall({
     endpoint: 'https://MY_SERVICE.api.oneall.com',
     publickey: '11111111-1111-1111-1111-111111111111',

@@ -12,9 +12,9 @@ The following example fetches a user information based on a connection token. Al
 
 
 ```js
-var Oneall = require('oneall-sdk');
+var Oneall = require('oneall');
 var oneall = new Oneall({
-    endpoint: 'https://baboom.api.oneall.com',
+    endpoint: 'https://MY_SERVICE.api.oneall.com',
     publickey: '11111111-1111-1111-1111-111111111111',
     privatekey: '222222222-2222-2222-2222-2222222222222'
 });
@@ -42,7 +42,7 @@ All the entities and methods described on: http://docs.oneall.com/api/ are also 
 ```js
 var Oneall = require('oneall-sdk');
 var oneall = new Oneall({
-    endpoint: 'https://baboom.api.oneall.com',
+    endpoint: 'https://MY_SERVICE.api.oneall.com',
     publickey: '11111111-1111-1111-1111-111111111111',
     privatekey: '222222222-2222-2222-2222-2222222222222'
 });

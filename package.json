@@ -8,6 +8,10 @@
   },
   "devDependencies": {},
   "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oneall/node-js-sdk.git"
+  },
   "keywords": [
     "sdk",
     "oneall",

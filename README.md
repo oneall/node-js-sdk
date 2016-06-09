@@ -169,7 +169,7 @@ Send a GET request to this resource to obtain the complete list of your identiti
 Send a GET request to this resource to obtain the complete list of your identities.
 
 ```js
-  oneall.identity.getAll(
+  oneall.identity.get(
     '55555555-5555-5555-5555-5555555555555',
     function (err, data, fullData) {
         if (err) {
